@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+      auto-index-creation: true
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
+kafka:
+  topic:
+    name: activity-events
+  ssl:
+    ca-cert: ${KAFKA_CA_CERT_PATH}
+    service-cert: ${KAFKA_SERVICE_CERT_PATH}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL}
+server:
+  port: 8082

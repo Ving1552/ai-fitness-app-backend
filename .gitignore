@@ -1,0 +1,10 @@
+**/target/
+**/.idea/
+**/*.iml
+**/.mvn/
+configserver/src/main/resources/config/
+configserver/src/main/resources/certs/
+.env
+*.env
+.DS_Store
+Thumbs.db
