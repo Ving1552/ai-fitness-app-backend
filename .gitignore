@@ -2,6 +2,7 @@
 **/.idea/
 **/*.iml
 **/.mvn/
+**/certs/
 configserver/src/main/resources/config/
 configserver/src/main/resources/certs/
 .env
