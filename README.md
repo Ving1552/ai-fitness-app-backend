@@ -17,18 +17,8 @@ Activities are fetched with **cursor-based pagination** (10 per page, sorted by 
 ## Architecture
 
 ```
-React Frontend (Vite + Tailwind)
-        │
-        ▼
-API Gateway (port 8080) ── JWT Validation
-        │
-        ├──▶ Auth Service    (port 8084) ── PostgreSQL
-        ├──▶ User Service    (port 8081) ── PostgreSQL
-        ├──▶ Activity Service(port 8082) ── MongoDB ──▶ Kafka
-        └──▶ AI Service      (port 8083) ── MongoDB ◀── Kafka
+<img width="1440" height="1220" alt="image" src="https://github.com/user-attachments/assets/efeb5db4-652f-4173-9772-d96651ceef25" />
 
-Eureka Server  (port 8761) ── Service Discovery
-Config Server  (port 8888) ── Centralized Configuration
 ```
 
 ---
