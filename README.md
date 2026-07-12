@@ -16,10 +16,7 @@ Activities are fetched with **cursor-based pagination** (10 per page, sorted by 
 
 ## Architecture
 
-```
 <img width="1440" height="1220" alt="image" src="https://github.com/user-attachments/assets/efeb5db4-652f-4173-9772-d96651ceef25" />
-
-```
 
 ---
 
