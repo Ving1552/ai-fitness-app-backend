@@ -7,6 +7,13 @@ on:
     branches: [ main ]
 
 jobs:
+  - name: Grant mvnw permission
+      run: chmod +x mvnw
+      working-directory: activityservice
+
+        - name: Run ActivityService tests
+          run: ./mvnw test
+          working-directory: activityservice
   test:
     runs-on: ubuntu-latest
 
