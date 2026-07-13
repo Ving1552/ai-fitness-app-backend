@@ -27,3 +27,8 @@ jobs:
       - name: Run ActivityService tests
         run: ./mvnw test
         working-directory: activityservice
+
+      - name: Print test results on failure
+          if: failure()
+          run: cat activityservice/target/surefire-reports/*.txt
+          working-directory: .
